@@ -1,0 +1,23 @@
+{
+  "name": "nodebus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Leonard Reidy <leonard.reidy@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:routes": "yarn run tsoa routes",
+    "compile:code": "yarn run tsc --outDir build --experimentalDecorators",
+    "run:service": "node build/src/server.js"
+  },
+  "dependencies": {
+    "@types/hapi": "^18.0.14",
+    "@types/joi": "^17.2.3",
+    "express": "^4.19.2",
+    "tsoa": "^6.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "typescript": "^5.5.4"
+  }
+}
